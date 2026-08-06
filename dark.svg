@@ -1,134 +1,169 @@
-import os
-
-dark_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%" style="background: transparent; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="100%" height="100%" style="background: transparent; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
   <defs>
-    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0A101F" />
+    <!-- Dark Cyberpunk Gradients -->
+    <linearGradient id="bg-grad-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050814" />
+      <stop offset="50%" stop-color="#0A1026" />
       <stop offset="100%" stop-color="#0F172A" />
     </linearGradient>
-    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#22D3EE" />
-      <stop offset="50%" stop-color="#A78BFA" />
+    
+    <linearGradient id="text-grad-primary" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="40%" stop-color="#818CF8" />
+      <stop offset="80%" stop-color="#C084FC" />
       <stop offset="100%" stop-color="#F472B6" />
     </linearGradient>
-    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.6" />
-      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.3" />
-      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.8" />
+
+    <linearGradient id="border-neon-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0.8" />
     </linearGradient>
+
     <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.15" />
-      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0" />
     </linearGradient>
+    
+    <linearGradient id="glow-purple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#A855F7" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1E293B" stroke-width="0.5" stroke-opacity="0.4" />
+      <circle cx="30" cy="0" r="1" fill="#38BDF8" fill-opacity="0.3" />
+    </pattern>
   </defs>
 
-  <!-- Container -->
-  <rect x="2" y="2" width="896" height="356" rx="16" fill="url(#bg-gradient)" stroke="url(#card-border)" stroke-width="2" />
+  <!-- Base Card Container -->
+  <rect x="2" y="2" width="916" height="376" rx="20" fill="url(#bg-grad-dark)" stroke="url(#border-neon-grad)" stroke-width="2" />
   
-  <!-- Terminal Header Bar -->
-  <path d="M 2 18 C 2 9.163 9.163 2 18 2 L 882 2 C 890.837 2 898 9.163 898 18 L 898 42 L 2 42 Z" fill="#070D18" />
-  <circle cx="24" cy="22" r="6" fill="#EF4444" />
-  <circle cx="44" cy="22" r="6" fill="#F59E0B" />
-  <circle cx="64" cy="22" r="6" fill="#10B981" />
-  <text x="450" y="26" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600" font-family="monospace">safir-akhtar ~ nystic-shadow @ github-profile</text>
-  <line x1="2" y1="42" x2="898" y2="42" stroke="#1E293B" stroke-width="1" />
+  <!-- Cyber Grid Background -->
+  <rect x="2" y="2" width="916" height="376" rx="20" fill="url(#cyber-grid)" />
 
-  <!-- Background Decorative Glowing Orbs -->
-  <circle cx="800" cy="100" r="120" fill="url(#glow-cyan)" />
-  <circle cx="100" cy="300" r="90" fill="#A78BFA" fill-opacity="0.05" />
+  <!-- Ambient Glow Circles -->
+  <circle cx="820" cy="80" r="150" fill="url(#glow-cyan)" />
+  <circle cx="100" cy="320" r="130" fill="url(#glow-purple)" />
 
-  <!-- Left Column: Branding &amp; Overview -->
-  <!-- Logo / Avatar Crest -->
-  <g transform="translate(40, 65)">
-    <rect x="0" y="0" width="72" height="72" rx="16" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
-    <path d="M 20 50 L 36 20 L 52 50 L 42 50 L 36 36 L 30 50 Z" fill="url(#text-gradient)" />
-    <circle cx="36" cy="28" r="3" fill="#22D3EE" />
-  </g>
+  <!-- Terminal Top Header Bar -->
+  <path d="M 2 20 C 2 10.059 10.059 2 20 2 L 900 2 C 909.941 2 918 10.059 918 20 L 918 46 L 2 46 Z" fill="#040711" />
+  <circle cx="26" cy="24" r="6" fill="#FF5F56" />
+  <circle cx="46" cy="24" r="6" fill="#FFBD2E" />
+  <circle cx="66" cy="24" r="6" fill="#27C93F" />
+  <text x="460" y="28" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600" font-family="monospace">safir-akhtar ~ nystic-shadow @ dev-terminal</text>
+  <line x1="2" y1="46" x2="918" y2="46" stroke="#1E293B" stroke-width="1" />
 
-  <!-- Name &amp; Subtitle -->
-  <text x="130" y="98" fill="url(#text-gradient)" font-size="32" font-weight="800" letter-spacing="0.5">Safir Akhtar</text>
-  <text x="130" y="124" fill="#94A3B8" font-size="15" font-weight="500">17 y/o Full-Stack Developer &amp; Creative Technologist</text>
-
-  <!-- Skill Pill Tags -->
-  <g transform="translate(40, 152)">
-    <!-- Tag 1 -->
-    <rect x="0" y="0" width="135" height="28" rx="14" fill="#082F49" stroke="#0EA5E9" stroke-width="1" />
-    <text x="67.5" y="18" text-anchor="middle" fill="#38BDF8" font-size="12" font-weight="600">Python &amp; Node.js</text>
+  <!-- LEFT SECTION: Avatar Crest & Bio -->
+  <!-- Glowing Cyber Crest -->
+  <g transform="translate(42, 72)">
+    <!-- Outer Pulsing Ring -->
+    <rect x="-4" y="-4" width="88" height="88" rx="22" fill="none" stroke="#38BDF8" stroke-width="1.5" stroke-opacity="0.6">
+      <animate attributeName="stroke-opacity" values="0.8;0.2;0.8" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="0" y="0" width="80" height="80" rx="18" fill="#0F172A" stroke="#334155" stroke-width="2" />
     
-    <!-- Tag 2 -->
-    <rect x="145" y="0" width="110" height="28" rx="14" fill="#172554" stroke="#3B82F6" stroke-width="1" />
-    <text x="200" y="18" text-anchor="middle" fill="#60A5FA" font-size="12" font-weight="600">Go (Golang)</text>
-
-    <!-- Tag 3 -->
-    <rect x="265" y="0" width="145" height="28" rx="14" fill="#2E1065" stroke="#8B5CF6" stroke-width="1" />
-    <text x="337.5" y="18" text-anchor="middle" fill="#C084FC" font-size="12" font-weight="600">AI Prompting &amp; LLMs</text>
-
-    <!-- Tag 4 -->
-    <rect x="0" y="38" width="135" height="28" rx="14" fill="#064E3B" stroke="#10B981" stroke-width="1" />
-    <text x="67.5" y="56" text-anchor="middle" fill="#34D399" font-size="12" font-weight="600">UI/UX Design</text>
-
-    <!-- Tag 5 -->
-    <rect x="145" y="38" width="130" height="28" rx="14" fill="#701A75" stroke="#D946EF" stroke-width="1" />
-    <text x="210" y="56" text-anchor="middle" fill="#F0ABFC" font-size="12" font-weight="600">Graphic &amp; 3D Design</text>
-
-    <!-- Tag 6 -->
-    <rect x="285" y="38" width="125" height="28" rx="14" fill="#4C1D95" stroke="#A855F7" stroke-width="1" />
-    <text x="347.5" y="56" text-anchor="middle" fill="#E9D5FF" font-size="12" font-weight="600">Video Editing</text>
+    <!-- Stylized Monogram N/S -->
+    <path d="M 22 58 L 40 22 L 58 58 L 48 58 L 40 40 L 32 58 Z" fill="url(#text-grad-primary)" />
+    <circle cx="40" cy="30" r="3.5" fill="#38BDF8" />
   </g>
 
-  <!-- Left Column Bottom Status -->
-  <g transform="translate(40, 260)">
-    <rect x="0" y="0" width="410" height="70" rx="12" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
-    <circle cx="24" cy="35" r="5" fill="#10B981">
-      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+  <!-- Name & Title -->
+  <text x="142" y="108" fill="url(#text-grad-primary)" font-size="34" font-weight="800" letter-spacing="0.5">Safir Akhtar</text>
+  <text x="142" y="136" fill="#94A3B8" font-size="15" font-weight="500">17 y/o Full-Stack Developer &amp; Creative Technologist</text>
+  
+  <!-- Badges / Tags Matrix -->
+  <g transform="translate(42, 168)">
+    <!-- Pill 1: Code -->
+    <rect x="0" y="0" width="145" height="30" rx="15" fill="#032B45" stroke="#0EA5E9" stroke-width="1" />
+    <text x="72.5" y="19" text-anchor="middle" fill="#38BDF8" font-size="12" font-weight="700">Python · Node · Go</text>
+    
+    <!-- Pill 2: Frontend -->
+    <rect x="155" y="0" width="135" height="30" rx="15" fill="#1E1B4B" stroke="#6366F1" stroke-width="1" />
+    <text x="222.5" y="19" text-anchor="middle" fill="#818CF8" font-size="12" font-weight="700">HTML5 · CSS3 · JS</text>
+
+    <!-- Pill 3: AI -->
+    <rect x="300" y="0" width="145" height="30" rx="15" fill="#2E1065" stroke="#A855F7" stroke-width="1" />
+    <text x="372.5" y="19" text-anchor="middle" fill="#C084FC" font-size="12" font-weight="700">AI Prompting &amp; LLMs</text>
+
+    <!-- Pill 4: UI/UX -->
+    <rect x="0" y="42" width="130" height="30" rx="15" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+    <text x="65" y="61" text-anchor="middle" fill="#34D399" font-size="12" font-weight="700">UI/UX (Figma)</text>
+
+    <!-- Pill 5: 3D Design -->
+    <rect x="140" y="42" width="155" height="30" rx="15" fill="#701A75" stroke="#D946EF" stroke-width="1" />
+    <text x="217.5" y="61" text-anchor="middle" fill="#F0ABFC" font-size="12" font-weight="700">3D Design (Blender)</text>
+
+    <!-- Pill 6: Video -->
+    <rect x="305" y="42" width="140" height="30" rx="15" fill="#831843" stroke="#F43F5E" stroke-width="1" />
+    <text x="375" y="61" text-anchor="middle" fill="#FB7185" font-size="12" font-weight="700">Video &amp; Motion</text>
+  </g>
+
+  <!-- Live Status Card -->
+  <g transform="translate(42, 280)">
+    <rect x="0" y="0" width="403" height="74" rx="14" fill="#091224" stroke="#1E293B" stroke-width="1.5" />
+    
+    <!-- Glowing Status Indicator -->
+    <circle cx="26" cy="37" r="6" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite" />
     </circle>
-    <text x="40" y="32" fill="#F8FAFC" font-size="13" font-weight="600">Status: <tspan fill="#10B981">Active &amp; Shipping</tspan></text>
-    <text x="40" y="52" fill="#64748B" font-size="12">Architecting web apps, AI tools &amp; visual media</text>
+    <circle cx="26" cy="37" r="10" fill="none" stroke="#10B981" stroke-width="1.5" stroke-opacity="0.5">
+      <animate attributeName="r" values="6;14;6" dur="2s" repeatCount="indefinite" />
+      <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite" />
+    </circle>
+
+    <text x="46" y="34" fill="#F8FAFC" font-size="13" font-weight="700">SYSTEM STATUS: <tspan fill="#34D399">ONLINE &amp; SHIPPING</tspan></text>
+    <text x="46" y="54" fill="#94A3B8" font-size="12">Architecting full-stack applications, AI tools &amp; visual media</text>
   </g>
 
-  <!-- Right Column: Terminal Info Panel (Spec from Master Prompt PDF) -->
-  <g transform="translate(480, 65)">
-    <rect x="0" y="0" width="380" height="265" rx="12" fill="#050B14" stroke="#1E293B" stroke-width="1" />
+  <!-- RIGHT SECTION: Terminal Info Box -->
+  <g transform="translate(470, 72)">
+    <rect x="0" y="0" width="408" height="282" rx="14" fill="#030712" stroke="#1E293B" stroke-width="1.5" />
     
-    <!-- Info Panel Terminal Rows with Dotted Leaders -->
+    <!-- Terminal Title Bar -->
+    <rect x="0" y="0" width="408" height="32" rx="14" fill="#0B132B" />
+    <text x="204" y="21" text-anchor="middle" fill="#64748B" font-size="12" font-family="monospace" font-weight="600">user-specifications.json</text>
+
+    <!-- Info Table Rows -->
     <!-- Row 1 -->
-    <text x="20" y="32" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Subject</text>
-    <text x="95" y="32" fill="#334155" font-size="13" font-family="monospace">.......................</text>
-    <text x="360" y="32" text-anchor="end" fill="#F8FAFC" font-size="13" font-family="monospace">Safir Akhtar</text>
+    <text x="20" y="60" fill="#C084FC" font-size="13" font-family="monospace" font-weight="700">Subject</text>
+    <text x="100" y="60" fill="#334155" font-size="13" font-family="monospace">............................</text>
+    <text x="388" y="60" text-anchor="end" fill="#F8FAFC" font-size="13" font-family="monospace">Safir Akhtar</text>
 
     <!-- Row 2 -->
-    <text x="20" y="60" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Age</text>
-    <text x="95" y="60" fill="#334155" font-size="13" font-family="monospace">.......................</text>
-    <text x="360" y="60" text-anchor="end" fill="#22D3EE" font-size="13" font-family="monospace">17 Years Old</text>
+    <text x="20" y="90" fill="#C084FC" font-size="13" font-family="monospace" font-weight="700">Age</text>
+    <text x="100" y="90" fill="#334155" font-size="13" font-family="monospace">............................</text>
+    <text x="388" y="90" text-anchor="end" fill="#38BDF8" font-size="13" font-family="monospace">17 Years Old</text>
 
     <!-- Row 3 -->
-    <text x="20" y="88" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Handle</text>
-    <text x="95" y="88" fill="#334155" font-size="13" font-family="monospace">.......................</text>
-    <text x="360" y="88" text-anchor="end" fill="#F472B6" font-size="13" font-family="monospace">@Nystic-Shadow</text>
+    <text x="20" y="120" fill="#C084FC" font-size="13" font-family="monospace" font-weight="700">Handle</text>
+    <text x="100" y="120" fill="#334155" font-size="13" font-family="monospace">............................</text>
+    <text x="388" y="120" text-anchor="end" fill="#F472B6" font-size="13" font-family="monospace">@Nystic-Shadow</text>
 
     <!-- Row 4 -->
-    <text x="20" y="116" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Core.Lang</text>
-    <text x="95" y="116" fill="#334155" font-size="13" font-family="monospace">.......................</text>
-    <text x="360" y="116" text-anchor="end" fill="#38BDF8" font-size="13" font-family="monospace">Python · Node · Go</text>
+    <text x="20" y="150" fill="#C084FC" font-size="13" font-family="monospace" font-weight="700">Core.Lang</text>
+    <text x="100" y="150" fill="#334155" font-size="13" font-family="monospace">............................</text>
+    <text x="388" y="150" text-anchor="end" fill="#818CF8" font-size="13" font-family="monospace">Python · Node · Go</text>
 
     <!-- Row 5 -->
-    <text x="20" y="144" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Frontend</text>
-    <text x="95" y="144" fill="#334155" font-size="13" font-family="monospace">.......................</text>
-    <text x="360" y="144" text-anchor="end" fill="#60A5FA" font-size="13" font-family="monospace">HTML5 · CSS3 · JS</text>
+    <text x="20" y="180" fill="#C084FC" font-size="13" font-family="monospace" font-weight="700">Frontend</text>
+    <text x="100" y="180" fill="#334155" font-size="13" font-family="monospace">............................</text>
+    <text x="388" y="180" text-anchor="end" fill="#60A5FA" font-size="13" font-family="monospace">HTML5 · CSS3 · JS</text>
 
     <!-- Row 6 -->
-    <text x="20" y="172" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Creative</text>
-    <text x="95" y="172" fill="#334155" font-size="13" font-family="monospace">.......................</text>
-    <text x="360" y="172" text-anchor="end" fill="#F0ABFC" font-size="13" font-family="monospace">UI/UX · Graphic · 3D</text>
+    <text x="20" y="210" fill="#C084FC" font-size="13" font-family="monospace" font-weight="700">Creative</text>
+    <text x="100" y="210" fill="#334155" font-size="13" font-family="monospace">............................</text>
+    <text x="388" y="210" text-anchor="end" fill="#F0ABFC" font-size="13" font-family="monospace">UI/UX · Graphic · 3D</text>
 
     <!-- Row 7 -->
-    <text x="20" y="200" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Media</text>
-    <text x="95" y="200" fill="#334155" font-size="13" font-family="monospace">.......................</text>
-    <text x="360" y="200" text-anchor="end" fill="#E9D5FF" font-size="13" font-family="monospace">Video Editing · Motion</text>
+    <text x="20" y="240" fill="#C084FC" font-size="13" font-family="monospace" font-weight="700">Media</text>
+    <text x="100" y="240" fill="#334155" font-size="13" font-family="monospace">............................</text>
+    <text x="388" y="240" text-anchor="end" fill="#FB7185" font-size="13" font-family="monospace">Video Editing · Motion</text>
 
     <!-- Row 8 -->
-    <text x="20" y="228" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">AI Skill</text>
-    <text x="95" y="228" fill="#334155" font-size="13" font-family="monospace">.......................</text>
-    <text x="360" y="228" text-anchor="end" fill="#34D399" font-size="13" font-family="monospace">Prompt Engineering</text>
+    <text x="20" y="268" fill="#C084FC" font-size="13" font-family="monospace" font-weight="700">AI Skill</text>
+    <text x="100" y="268" fill="#334155" font-size="13" font-family="monospace">............................</text>
+    <text x="388" y="268" text-anchor="end" fill="#34D399" font-size="13" font-family="monospace">Prompt Engineering</text>
   </g>
 </svg>
