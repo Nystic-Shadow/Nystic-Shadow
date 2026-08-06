@@ -1,0 +1,134 @@
+import os
+
+dark_svg = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%" style="background: transparent; font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A101F" />
+      <stop offset="100%" stop-color="#0F172A" />
+    </linearGradient>
+    <linearGradient id="text-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE" />
+      <stop offset="50%" stop-color="#A78BFA" />
+      <stop offset="100%" stop-color="#F472B6" />
+    </linearGradient>
+    <linearGradient id="card-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.6" />
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#1E293B" stop-opacity="0.8" />
+    </linearGradient>
+    <linearGradient id="glow-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect x="2" y="2" width="896" height="356" rx="16" fill="url(#bg-gradient)" stroke="url(#card-border)" stroke-width="2" />
+  
+  <!-- Terminal Header Bar -->
+  <path d="M 2 18 C 2 9.163 9.163 2 18 2 L 882 2 C 890.837 2 898 9.163 898 18 L 898 42 L 2 42 Z" fill="#070D18" />
+  <circle cx="24" cy="22" r="6" fill="#EF4444" />
+  <circle cx="44" cy="22" r="6" fill="#F59E0B" />
+  <circle cx="64" cy="22" r="6" fill="#10B981" />
+  <text x="450" y="26" text-anchor="middle" fill="#64748B" font-size="13" font-weight="600" font-family="monospace">safir-akhtar ~ nystic-shadow @ github-profile</text>
+  <line x1="2" y1="42" x2="898" y2="42" stroke="#1E293B" stroke-width="1" />
+
+  <!-- Background Decorative Glowing Orbs -->
+  <circle cx="800" cy="100" r="120" fill="url(#glow-cyan)" />
+  <circle cx="100" cy="300" r="90" fill="#A78BFA" fill-opacity="0.05" />
+
+  <!-- Left Column: Branding &amp; Overview -->
+  <!-- Logo / Avatar Crest -->
+  <g transform="translate(40, 65)">
+    <rect x="0" y="0" width="72" height="72" rx="16" fill="#1E293B" stroke="#334155" stroke-width="1.5" />
+    <path d="M 20 50 L 36 20 L 52 50 L 42 50 L 36 36 L 30 50 Z" fill="url(#text-gradient)" />
+    <circle cx="36" cy="28" r="3" fill="#22D3EE" />
+  </g>
+
+  <!-- Name &amp; Subtitle -->
+  <text x="130" y="98" fill="url(#text-gradient)" font-size="32" font-weight="800" letter-spacing="0.5">Safir Akhtar</text>
+  <text x="130" y="124" fill="#94A3B8" font-size="15" font-weight="500">17 y/o Full-Stack Developer &amp; Creative Technologist</text>
+
+  <!-- Skill Pill Tags -->
+  <g transform="translate(40, 152)">
+    <!-- Tag 1 -->
+    <rect x="0" y="0" width="135" height="28" rx="14" fill="#082F49" stroke="#0EA5E9" stroke-width="1" />
+    <text x="67.5" y="18" text-anchor="middle" fill="#38BDF8" font-size="12" font-weight="600">Python &amp; Node.js</text>
+    
+    <!-- Tag 2 -->
+    <rect x="145" y="0" width="110" height="28" rx="14" fill="#172554" stroke="#3B82F6" stroke-width="1" />
+    <text x="200" y="18" text-anchor="middle" fill="#60A5FA" font-size="12" font-weight="600">Go (Golang)</text>
+
+    <!-- Tag 3 -->
+    <rect x="265" y="0" width="145" height="28" rx="14" fill="#2E1065" stroke="#8B5CF6" stroke-width="1" />
+    <text x="337.5" y="18" text-anchor="middle" fill="#C084FC" font-size="12" font-weight="600">AI Prompting &amp; LLMs</text>
+
+    <!-- Tag 4 -->
+    <rect x="0" y="38" width="135" height="28" rx="14" fill="#064E3B" stroke="#10B981" stroke-width="1" />
+    <text x="67.5" y="56" text-anchor="middle" fill="#34D399" font-size="12" font-weight="600">UI/UX Design</text>
+
+    <!-- Tag 5 -->
+    <rect x="145" y="38" width="130" height="28" rx="14" fill="#701A75" stroke="#D946EF" stroke-width="1" />
+    <text x="210" y="56" text-anchor="middle" fill="#F0ABFC" font-size="12" font-weight="600">Graphic &amp; 3D Design</text>
+
+    <!-- Tag 6 -->
+    <rect x="285" y="38" width="125" height="28" rx="14" fill="#4C1D95" stroke="#A855F7" stroke-width="1" />
+    <text x="347.5" y="56" text-anchor="middle" fill="#E9D5FF" font-size="12" font-weight="600">Video Editing</text>
+  </g>
+
+  <!-- Left Column Bottom Status -->
+  <g transform="translate(40, 260)">
+    <rect x="0" y="0" width="410" height="70" rx="12" fill="#0B132B" stroke="#1E293B" stroke-width="1" />
+    <circle cx="24" cy="35" r="5" fill="#10B981">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <text x="40" y="32" fill="#F8FAFC" font-size="13" font-weight="600">Status: <tspan fill="#10B981">Active &amp; Shipping</tspan></text>
+    <text x="40" y="52" fill="#64748B" font-size="12">Architecting web apps, AI tools &amp; visual media</text>
+  </g>
+
+  <!-- Right Column: Terminal Info Panel (Spec from Master Prompt PDF) -->
+  <g transform="translate(480, 65)">
+    <rect x="0" y="0" width="380" height="265" rx="12" fill="#050B14" stroke="#1E293B" stroke-width="1" />
+    
+    <!-- Info Panel Terminal Rows with Dotted Leaders -->
+    <!-- Row 1 -->
+    <text x="20" y="32" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Subject</text>
+    <text x="95" y="32" fill="#334155" font-size="13" font-family="monospace">.......................</text>
+    <text x="360" y="32" text-anchor="end" fill="#F8FAFC" font-size="13" font-family="monospace">Safir Akhtar</text>
+
+    <!-- Row 2 -->
+    <text x="20" y="60" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Age</text>
+    <text x="95" y="60" fill="#334155" font-size="13" font-family="monospace">.......................</text>
+    <text x="360" y="60" text-anchor="end" fill="#22D3EE" font-size="13" font-family="monospace">17 Years Old</text>
+
+    <!-- Row 3 -->
+    <text x="20" y="88" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Handle</text>
+    <text x="95" y="88" fill="#334155" font-size="13" font-family="monospace">.......................</text>
+    <text x="360" y="88" text-anchor="end" fill="#F472B6" font-size="13" font-family="monospace">@Nystic-Shadow</text>
+
+    <!-- Row 4 -->
+    <text x="20" y="116" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Core.Lang</text>
+    <text x="95" y="116" fill="#334155" font-size="13" font-family="monospace">.......................</text>
+    <text x="360" y="116" text-anchor="end" fill="#38BDF8" font-size="13" font-family="monospace">Python · Node · Go</text>
+
+    <!-- Row 5 -->
+    <text x="20" y="144" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Frontend</text>
+    <text x="95" y="144" fill="#334155" font-size="13" font-family="monospace">.......................</text>
+    <text x="360" y="144" text-anchor="end" fill="#60A5FA" font-size="13" font-family="monospace">HTML5 · CSS3 · JS</text>
+
+    <!-- Row 6 -->
+    <text x="20" y="172" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Creative</text>
+    <text x="95" y="172" fill="#334155" font-size="13" font-family="monospace">.......................</text>
+    <text x="360" y="172" text-anchor="end" fill="#F0ABFC" font-size="13" font-family="monospace">UI/UX · Graphic · 3D</text>
+
+    <!-- Row 7 -->
+    <text x="20" y="200" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">Media</text>
+    <text x="95" y="200" fill="#334155" font-size="13" font-family="monospace">.......................</text>
+    <text x="360" y="200" text-anchor="end" fill="#E9D5FF" font-size="13" font-family="monospace">Video Editing · Motion</text>
+
+    <!-- Row 8 -->
+    <text x="20" y="228" fill="#A78BFA" font-size="13" font-family="monospace" font-weight="600">AI Skill</text>
+    <text x="95" y="228" fill="#334155" font-size="13" font-family="monospace">.......................</text>
+    <text x="360" y="228" text-anchor="end" fill="#34D399" font-size="13" font-family="monospace">Prompt Engineering</text>
+  </g>
+</svg>
