@@ -9,6 +9,16 @@
 
 <br/>
 
+<!-- ===== SPECIALIZATION PILLARS SHOWCASE ===== -->
+
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/Nystic-Shadow/Nystic-Shadow/main/projects.svg" alt="Nystic Shadow Specialization Pillars" />
+
+</div>
+
+<br/>
+
 <!-- ===== SPECIALIZATION & SOFTWARE MATRIX ===== -->
 
 <div align="center">

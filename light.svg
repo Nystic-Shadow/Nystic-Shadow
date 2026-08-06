@@ -58,30 +58,26 @@
       <text x="26" y="33" text-anchor="middle" fill="url(#nystic-grad)" font-size="19" font-weight="900" font-family="monospace">&lt;/&gt;</text>
     </g>
 
-    <!-- Main Hero Name & Concise Subtitle (Till 17 y/o as requested) -->
+    <!-- Main Hero Name & Concise Subtitle -->
     <text x="66" y="34" fill="url(#nystic-grad)" font-size="34" font-weight="900" font-family="'Segoe UI', sans-serif" letter-spacing="1">Nystic Shadow</text>
     <text x="66" y="56" fill="#475569" font-size="14.5" font-weight="600" font-family="'Segoe UI', sans-serif">Safir Akhtar • 17 y/o</text>
 
-    <!-- Concise Skill Pills Grid (Uncluttered) -->
+    <!-- Concise Skill Pills Grid -->
     <g transform="translate(0, 80)">
-      <!-- Pill 1 -->
       <rect x="0" y="0" width="170" height="32" rx="16" fill="#F8FAFC" stroke="#0891B2" stroke-width="1"/>
       <text x="85" y="21" text-anchor="middle" fill="#0891B2" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">Python · Node · Go</text>
 
-      <!-- Pill 2 -->
       <rect x="182" y="0" width="170" height="32" rx="16" fill="#F8FAFC" stroke="#7C3AED" stroke-width="1"/>
       <text x="267" y="21" text-anchor="middle" fill="#7C3AED" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">UI/UX &amp; Web Design</text>
 
-      <!-- Pill 3 -->
       <rect x="0" y="42" width="170" height="32" rx="16" fill="#F8FAFC" stroke="#059669" stroke-width="1"/>
       <text x="85" y="63" text-anchor="middle" fill="#059669" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">Graphics &amp; Video</text>
 
-      <!-- Pill 4 -->
       <rect x="182" y="42" width="170" height="32" rx="16" fill="#F8FAFC" stroke="#BE123C" stroke-width="1"/>
       <text x="267" y="63" text-anchor="middle" fill="#BE123C" font-size="12" font-weight="700" font-family="'Segoe UI', sans-serif">AI Prompts &amp; Workflows</text>
     </g>
 
-    <!-- Clean Live Status Pill -->
+    <!-- Clean Live Status Pill with Audio Equalizer -->
     <g transform="translate(0, 205)">
       <rect width="352" height="64" rx="14" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
       <circle cx="22" cy="32" r="5" fill="#059669">
@@ -91,7 +87,7 @@
         <animate attributeName="r" values="5;13;5" dur="2s" repeatCount="indefinite"/>
         <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <text x="42" y="28" fill="#0F172A" font-size="12.5" font-weight="700" font-family="'Segoe UI', sans-serif">STATUS: <tspan fill="#059669">BUILDING &amp; AUTOMATING</tspan></text>
+      <text x="42" y="28" fill="#0F172A" font-size="12.5" font-weight="700" font-family="'Segoe UI', sans-serif">STATUS: <tspan fill="#059669">SHIPPING &amp; AUTOMATING</tspan></text>
       <text x="42" y="46" fill="#475569" font-size="11" font-family="'Segoe UI', sans-serif">Full-Stack Engineering • Creative Design • AI Skills</text>
     </g>
   </g>
@@ -106,37 +102,30 @@
 
     <!-- Concise Spec Rows -->
     <g transform="translate(22, 24)" font-size="12.5">
-      <!-- Row 1 -->
       <text y="34" fill="#7C3AED" font-weight="700">Brand</text>
       <text x="75" y="34" fill="#CBD5E1">......................................</text>
       <text x="450" y="34" text-anchor="end" fill="#0F172A">Nystic Shadow</text>
 
-      <!-- Row 2 -->
       <text y="72" fill="#7C3AED" font-weight="700">Creator</text>
       <text x="85" y="72" fill="#CBD5E1">................................</text>
       <text x="450" y="72" text-anchor="end" fill="#0891B2">Safir Akhtar (Age 17)</text>
 
-      <!-- Row 3 -->
       <text y="110" fill="#7C3AED" font-weight="700">Handle</text>
       <text x="80" y="110" fill="#CBD5E1">..................................</text>
       <text x="450" y="110" text-anchor="end" fill="#BE123C">@Nystic-Shadow</text>
 
-      <!-- Row 4 -->
       <text y="148" fill="#7C3AED" font-weight="700">Dev.Sign</text>
       <text x="95" y="148" fill="#CBD5E1">............................</text>
       <text x="450" y="148" text-anchor="end" fill="#059669">&lt;/&gt; Developer &amp; Designer</text>
 
-      <!-- Row 5 -->
       <text y="186" fill="#7C3AED" font-weight="700">Core.Lang</text>
       <text x="100" y="186" fill="#CBD5E1">..........................</text>
       <text x="450" y="186" text-anchor="end" fill="#0891B2">Python · Node.js · Go · JS</text>
 
-      <!-- Row 6 -->
       <text y="224" fill="#7C3AED" font-weight="700">Creative</text>
       <text x="95" y="224" fill="#CBD5E1">..........................</text>
       <text x="450" y="224" text-anchor="end" fill="#F0ABFC">UI/UX · Adobe Suite · AI Skill</text>
 
-      <!-- Row 7 -->
       <text y="262" fill="#7C3AED" font-weight="700">Tools</text>
       <text x="75" y="262" fill="#CBD5E1">......................................</text>
       <text x="450" y="262" text-anchor="end" fill="#475569">VS Code · Git · Figma</text>

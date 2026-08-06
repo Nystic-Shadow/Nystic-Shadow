@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="220" viewBox="0 0 1180 220" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" role="img" aria-label="Nystic Shadow — Specialization Pillars">
+  <defs>
+    <linearGradient id="p-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="50%" stop-color="#A78BFA"/>
+      <stop offset="100%" stop-color="#F472B6"/>
+    </linearGradient>
+    <linearGradient id="p-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A101F"/>
+      <stop offset="1" stop-color="#0C1426"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1180" height="220" rx="16" fill="url(#p-card)" stroke="#1E293B" stroke-width="2"/>
+
+  <!-- Header Title -->
+  <text x="40" y="42" fill="url(#p-grad)" font-size="20" font-weight="800" font-family="'Segoe UI', sans-serif">🚀 SPECIALIZATION PILLARS &amp; EXPERTISE</text>
+  <line x1="40" y1="56" x2="1140" y2="56" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- 4 Pillars Grid -->
+  <!-- Pillar 1: Full-Stack -->
+  <g transform="translate(40, 75)">
+    <rect width="255" height="115" rx="12" fill="#040711" stroke="#22D3EE" stroke-width="1"/>
+    <text x="20" y="32" fill="#22D3EE" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">💻 Full-Stack Dev</text>
+    <text x="20" y="56" fill="#F8FAFC" font-size="12">Python · Node.js · Go</text>
+    <text x="20" y="76" fill="#94A3B8" font-size="11">Scalable Web &amp; REST APIs</text>
+    <text x="20" y="96" fill="#10B981" font-size="11" font-weight="600">🟢 Active Engineering</text>
+  </g>
+
+  <!-- Pillar 2: AI Workflows -->
+  <g transform="translate(325, 75)">
+    <rect width="255" height="115" rx="12" fill="#040711" stroke="#A78BFA" stroke-width="1"/>
+    <text x="20" y="32" fill="#A78BFA" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">🤖 AI &amp; Automation</text>
+    <text x="20" y="56" fill="#F8FAFC" font-size="12">Prompt Engineering</text>
+    <text x="20" y="76" fill="#94A3B8" font-size="11">LLM &amp; Agent Workflows</text>
+    <text x="20" y="96" fill="#A78BFA" font-size="11" font-weight="600">⚡ LLM Architect</text>
+  </g>
+
+  <!-- Pillar 3: UI/UX & 3D -->
+  <g transform="translate(610, 75)">
+    <rect width="255" height="115" rx="12" fill="#040711" stroke="#F472B6" stroke-width="1"/>
+    <text x="20" y="32" fill="#F472B6" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">🎨 UI/UX &amp; Web Design</text>
+    <text x="20" y="56" fill="#F8FAFC" font-size="12">Figma · XD · Canva · CDR</text>
+    <text x="20" y="76" fill="#94A3B8" font-size="11">Design Systems &amp; Prototyping</text>
+    <text x="20" y="96" fill="#F472B6" font-size="11" font-weight="600">✨ Visual Artist</text>
+  </g>
+
+  <!-- Pillar 4: Video Editing -->
+  <g transform="translate(895, 75)">
+    <rect width="245" height="115" rx="12" fill="#040711" stroke="#10B981" stroke-width="1"/>
+    <text x="20" y="32" fill="#10B981" font-size="14" font-weight="700" font-family="'Segoe UI', sans-serif">🎬 Video &amp; Motion</text>
+    <text x="20" y="56" fill="#F8FAFC" font-size="12">Premiere Pro · After Effects</text>
+    <text x="20" y="76" fill="#94A3B8" font-size="11">Cinematic VFX &amp; Edits</text>
+    <text x="20" y="96" fill="#10B981" font-size="11" font-weight="600">🎥 Post-Production</text>
+  </g>
+</svg>
