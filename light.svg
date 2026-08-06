@@ -19,7 +19,7 @@
     </pattern>
   </defs>
 
-  <!-- Container -->
+  <!-- Base Container -->
   <rect width="1180" height="610" rx="16" fill="url(#panelGradLight)" stroke="#CBD5E1" stroke-width="2"/>
   <rect width="1180" height="610" rx="16" fill="url(#gridPatternLight)"/>
 
@@ -32,103 +32,106 @@
   <line x1="0" y1="48" x2="1180" y2="48" stroke="#CBD5E1" stroke-width="1"/>
 
   <!-- Left Side: Profile Hero Branding -->
-  <g transform="translate(60, 80)">
-    <!-- Monogram Icon Crest -->
+  <g transform="translate(50, 75)">
+    <!-- Dev Sign Crest </ > -->
     <g transform="translate(0, 10)">
       <rect width="90" height="90" rx="20" fill="#F8FAFC" stroke="url(#accent-light)" stroke-width="2"/>
-      <path d="M 26 66 L 45 24 L 64 66 L 53 66 L 45 44 L 37 66 Z" fill="url(#accent-light)"/>
-      <circle cx="45" cy="33" r="4" fill="#0891B2"/>
+      <text x="45" y="56" text-anchor="middle" fill="url(#accent-light)" font-size="34" font-weight="900" font-family="monospace">&lt;/&gt;</text>
     </g>
 
-    <!-- Name & Subtitle -->
-    <text x="115" y="55" fill="url(#accent-light)" font-size="40" font-weight="800" font-family="'Segoe UI', sans-serif" letter-spacing="0.5">Safir Akhtar</text>
-    <text x="115" y="85" fill="#475569" font-size="17" font-weight="500" font-family="'Segoe UI', sans-serif">17 y/o Developer &amp; Creative Technologist</text>
+    <!-- Name & Professional Subtitle -->
+    <text x="115" y="52" fill="url(#accent-light)" font-size="38" font-weight="800" font-family="'Segoe UI', sans-serif" letter-spacing="0.5">Safir Akhtar</text>
+    <text x="115" y="82" fill="#475569" font-size="16" font-weight="500" font-family="'Segoe UI', sans-serif">17 y/o Web Developer, UI/UX Designer &amp; AI Specialist</text>
 
-    <!-- Skill Pills Grid -->
-    <g transform="translate(0, 135)">
+    <!-- Skill Pills Matrix -->
+    <g transform="translate(0, 130)">
       <rect x="0" y="0" width="165" height="34" rx="17" fill="#E0F2FE" stroke="#0284C7" stroke-width="1"/>
       <text x="82.5" y="22" text-anchor="middle" fill="#0369A1" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">Python · Node · Go</text>
       
       <rect x="180" y="0" width="155" height="34" rx="17" fill="#EEF2FF" stroke="#6366F1" stroke-width="1"/>
-      <text x="257.5" y="22" text-anchor="middle" fill="#4338CA" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">HTML5 · CSS3 · JS</text>
+      <text x="257.5" y="22" text-anchor="middle" fill="#4338CA" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">Web Dev &amp; Design</text>
 
-      <rect x="350" y="0" width="170" height="34" rx="17" fill="#F3E8FF" stroke="#A855F7" stroke-width="1"/>
-      <text x="435" y="22" text-anchor="middle" fill="#7E22CE" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">AI Prompt Engineering</text>
+      <rect x="350" y="0" width="180" height="34" rx="17" fill="#F3E8FF" stroke="#A855F7" stroke-width="1"/>
+      <text x="440" y="22" text-anchor="middle" fill="#7E22CE" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">AI Workflows &amp; Prompts</text>
 
-      <rect x="0" y="48" width="150" height="34" rx="17" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
-      <text x="75" y="70" text-anchor="middle" fill="#047857" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">UI/UX (Figma)</text>
+      <rect x="0" y="48" width="160" height="34" rx="17" fill="#ECFDF5" stroke="#10B981" stroke-width="1"/>
+      <text x="80" y="70" text-anchor="middle" fill="#047857" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">UI/UX (Figma / XD)</text>
 
-      <rect x="165" y="48" width="175" height="34" rx="17" fill="#FDF4FF" stroke="#D946EF" stroke-width="1"/>
-      <text x="252.5" y="70" text-anchor="middle" fill="#A21CAF" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">3D Design (Blender)</text>
+      <rect x="175" y="48" width="180" height="34" rx="17" fill="#FDF4FF" stroke="#D946EF" stroke-width="1"/>
+      <text x="265" y="70" text-anchor="middle" fill="#A21CAF" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">Graphics (Ps / Ai / CDR)</text>
 
-      <rect x="355" y="48" width="165" height="34" rx="17" fill="#FFF1F2" stroke="#F43F5E" stroke-width="1"/>
-      <text x="437.5" y="70" text-anchor="middle" fill="#BE123C" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">Video &amp; Motion</text>
+      <rect x="370" y="48" width="160" height="34" rx="17" fill="#FFF1F2" stroke="#F43F5E" stroke-width="1"/>
+      <text x="450" y="70" text-anchor="middle" fill="#BE123C" font-size="13" font-weight="700" font-family="'Segoe UI', sans-serif">Video Editing (Pr / AE)</text>
     </g>
 
-    <!-- Live Status Banner Card -->
+    <!-- Live Status Card -->
     <g transform="translate(0, 260)">
-      <rect width="520" height="85" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
-      <circle cx="32" cy="42.5" r="7" fill="#059669">
+      <rect width="530" height="90" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+      <circle cx="32" cy="45" r="7" fill="#059669">
         <animate attributeName="opacity" values="1;0.2;1" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <circle cx="32" cy="42.5" r="12" fill="none" stroke="#059669" stroke-width="1.5" stroke-opacity="0.5">
+      <circle cx="32" cy="45" r="12" fill="none" stroke="#059669" stroke-width="1.5" stroke-opacity="0.5">
         <animate attributeName="r" values="7;16;7" dur="2s" repeatCount="indefinite"/>
         <animate attributeName="stroke-opacity" values="0.8;0;0.8" dur="2s" repeatCount="indefinite"/>
       </circle>
-      <text x="56" y="38" fill="#0F172A" font-size="15" font-weight="700" font-family="'Segoe UI', sans-serif">STATUS: <tspan fill="#059669">BUILDING &amp; SHIPPING</tspan></text>
-      <text x="56" y="60" fill="#64748B" font-size="13" font-family="'Segoe UI', sans-serif">Architecting modern web apps, AI tools &amp; visual media</text>
+      <text x="56" y="40" fill="#0F172A" font-size="15" font-weight="700" font-family="'Segoe UI', sans-serif">STATUS: <tspan fill="#059669">DEVELOPING &amp; AUTOMATING</tspan></text>
+      <text x="56" y="63" fill="#64748B" font-size="13" font-family="'Segoe UI', sans-serif">Full-Stack Systems · Creative Design · AI Workflows</text>
     </g>
   </g>
 
   <!-- Right Side: Terminal Info Panel -->
-  <g transform="translate(630, 80)">
-    <rect width="490" height="465" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
+  <g transform="translate(610, 75)">
+    <rect width="520" height="480" rx="16" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5"/>
     
-    <path d="M 0 16 C 0 7.163 7.163 0 16 0 L 474 0 C 482.837 0 490 7.163 490 16 L 490 38 L 0 38 Z" fill="#E2E8F0"/>
-    <text x="245" y="24" text-anchor="middle" fill="#475569" font-size="13" font-weight="600">user-profile.json</text>
-    <line x1="0" y1="38" x2="490" y2="38" stroke="#CBD5E1" stroke-width="1"/>
+    <path d="M 0 16 C 0 7.163 7.163 0 16 0 L 504 0 C 512.837 0 520 7.163 520 16 L 520 38 L 0 38 Z" fill="#E2E8F0"/>
+    <text x="260" y="24" text-anchor="middle" fill="#475569" font-size="13" font-weight="600">user-profile.json</text>
+    <line x1="0" y1="38" x2="520" y2="38" stroke="#CBD5E1" stroke-width="1"/>
 
     <!-- Terminal Spec Rows -->
-    <g transform="translate(25, 40)" font-size="14">
+    <g transform="translate(25, 40)" font-size="13.5">
       <text y="35" fill="#7C3AED" font-weight="700">Subject</text>
-      <text x="110" y="35" fill="#CBD5E1">......................................</text>
-      <text x="440" y="35" text-anchor="end" fill="#0F172A">Safir Akhtar</text>
+      <text x="110" y="35" fill="#CBD5E1">........................................</text>
+      <text x="470" y="35" text-anchor="end" fill="#0F172A">Safir Akhtar</text>
 
-      <text y="75" fill="#7C3AED" font-weight="700">Age</text>
-      <text x="110" y="75" fill="#CBD5E1">......................................</text>
-      <text x="440" y="75" text-anchor="end" fill="#0891B2">17 Years Old</text>
+      <text y="72" fill="#7C3AED" font-weight="700">Age</text>
+      <text x="110" y="72" fill="#CBD5E1">........................................</text>
+      <text x="470" y="72" text-anchor="end" fill="#0891B2">17 Years Old</text>
 
-      <text y="115" fill="#7C3AED" font-weight="700">Handle</text>
-      <text x="110" y="115" fill="#CBD5E1">......................................</text>
-      <text x="440" y="115" text-anchor="end" fill="#BE123C">@Nystic-Shadow</text>
+      <text y="109" fill="#7C3AED" font-weight="700">Handle</text>
+      <text x="110" y="109" fill="#CBD5E1">........................................</text>
+      <text x="470" y="109" text-anchor="end" fill="#BE123C">@Nystic-Shadow</text>
 
-      <text y="155" fill="#7C3AED" font-weight="700">Status</text>
-      <text x="110" y="155" fill="#CBD5E1">......................................</text>
-      <text x="440" y="155" text-anchor="end" fill="#059669">Building + Learning + Shipping</text>
+      <text y="146" fill="#7C3AED" font-weight="700">Dev.Sign</text>
+      <text x="110" y="146" fill="#CBD5E1">........................................</text>
+      <text x="470" y="146" text-anchor="end" fill="#059669">&lt;/&gt; Full-Stack &amp; Creative</text>
 
-      <text y="195" fill="#7C3AED" font-weight="700">ToolChain</text>
-      <text x="110" y="195" fill="#CBD5E1">......................................</text>
-      <text x="440" y="195" text-anchor="end" fill="#475569">VS Code · Git · Figma · Blender</text>
+      <text y="183" fill="#7C3AED" font-weight="700">Core.Lang</text>
+      <text x="110" y="183" fill="#CBD5E1">........................................</text>
+      <text x="470" y="183" text-anchor="end" fill="#0369A1">Python · Node.js · Go</text>
 
-      <text y="235" fill="#7C3AED" font-weight="700">Core.Lang</text>
-      <text x="110" y="235" fill="#CBD5E1">......................................</text>
-      <text x="440" y="235" text-anchor="end" fill="#0369A1">Python · Node.js · Go</text>
+      <text y="220" fill="#7C3AED" font-weight="700">Web.Dev</text>
+      <text x="110" y="220" fill="#CBD5E1">........................................</text>
+      <text x="470" y="220" text-anchor="end" fill="#1D4ED8">HTML5 · CSS3 · JavaScript</text>
 
-      <text y="275" fill="#7C3AED" font-weight="700">Core.Web</text>
-      <text x="110" y="275" fill="#CBD5E1">......................................</text>
-      <text x="440" y="275" text-anchor="end" fill="#1D4ED8">HTML5 · CSS3 · JavaScript</text>
+      <text y="257" fill="#7C3AED" font-weight="700">UI/UX.Tools</text>
+      <text x="110" y="257" fill="#CBD5E1">........................................</text>
+      <text x="470" y="257" text-anchor="end" fill="#A21CAF">Figma · Adobe XD · Canva</text>
 
-      <text y="315" fill="#7C3AED" font-weight="700">Creative</text>
-      <text x="110" y="315" fill="#CBD5E1">......................................</text>
-      <text x="440" y="315" text-anchor="end" fill="#A21CAF">UI/UX · Graphic · 3D Art</text>
+      <text y="294" fill="#7C3AED" font-weight="700">Graphic.Tools</text>
+      <text x="110" y="294" fill="#CBD5E1">........................................</text>
+      <text x="470" y="294" text-anchor="end" fill="#475569">Photoshop · Illustrator · CorelDRAW</text>
 
-      <text y="355" fill="#7C3AED" font-weight="700">Media</text>
-      <text x="110" y="355" fill="#CBD5E1">......................................</text>
-      <text x="440" y="355" text-anchor="end" fill="#BE123C">Video Editing · Motion Graphics</text>
+      <text y="331" fill="#7C3AED" font-weight="700">Video.Tools</text>
+      <text x="110" y="331" fill="#CBD5E1">........................................</text>
+      <text x="470" y="331" text-anchor="end" fill="#BE123C">Premiere Pro · After Effects</text>
 
-      <text y="395" fill="#7C3AED" font-weight="700">AI.Skill</text>
-      <text x="110" y="395" fill="#CBD5E1">......................................</text>
-      <text x="440" y="395" text-anchor="end" fill="#047857">Prompt Engineering &amp; Workflows</text>
+      <text y="368" fill="#7C3AED" font-weight="700">Dev.Tools</text>
+      <text x="110" y="368" fill="#CBD5E1">........................................</text>
+      <text x="470" y="368" text-anchor="end" fill="#475569">VS Code · Git</text>
+
+      <text y="405" fill="#7C3AED" font-weight="700">AI.Skill</text>
+      <text x="110" y="405" fill="#CBD5E1">........................................</text>
+      <text x="470" y="405" text-anchor="end" fill="#047857">Prompt Engineering &amp; Automation</text>
     </g>
   </g>
 </svg>
