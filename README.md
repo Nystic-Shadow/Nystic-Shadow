@@ -9,26 +9,27 @@
 
 <br/><br/>
 
-### ⚡ 17 y/o Developer & Creative Technologist
+# 👋 Hey, I'm Safir Akhtar
+### ⚡ 17-Year-Old Developer, Creative Technologist & Visual Designer
 
-*Architecting modern software with Python, Node.js & Go — Fusing AI Prompt Engineering, UI/UX, 3D Design & Video Editing.*
+*Building intelligent software with **Python**, **Node.js** & **Go** • Crafting **UI/UX**, **3D Assets**, **Video Content** & **AI Prompts***
 
 <br/>
 
-<!-- Social Badges -->
+<!-- Connect Badges -->
 <a href="https://github.com/Nystic-Shadow">
   <img src="https://img.shields.io/badge/GitHub-Nystic--Shadow-0A101F?style=for-the-badge&logo=github&logoColor=22D3EE&labelColor=0A101F" alt="GitHub" />
 </a>
 &nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/YOUR-LINKEDIN-ID/">
+<a href="https://www.linkedin.com/in/safir-akhtar/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
 </a>
 &nbsp;&nbsp;
-<a href="https://www.instagram.com/YOUR-INSTAGRAM-HANDLE/">
+<a href="https://www.instagram.com/nystic_shadow/">
   <img src="https://img.shields.io/badge/Instagram-0A101F?style=for-the-badge&logo=instagram&logoColor=A78BFA&labelColor=0A101F" alt="Instagram" />
 </a>
 &nbsp;&nbsp;
-<a href="mailto:your.email@example.com">
+<a href="mailto:contact.safirakhtar@gmail.com">
   <img src="https://img.shields.io/badge/Email-Safir_Akhtar-0A101F?style=for-the-badge&logo=gmail&logoColor=10B981&labelColor=0A101F" alt="Email" />
 </a>
 
@@ -38,26 +39,47 @@
 
 ---
 
-### 🚀 Tech Stack & Creative Arsenal
+## 👨‍💻 About Me
 
-<div align="center">
+```gcode
+➜  whoami       Safir Akhtar (@Nystic-Shadow)
+➜  age          17 Years Old
+➜  role         Full-Stack Developer & Creative Technologist
+➜  passions     Full-Stack Web, AI Prompt Engineering, 3D Art & Video Production
+➜  motto        "Merging clean code with breathtaking visual design."
+```
 
-#### 💻 Programming Languages
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-<img src="https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+- 💡 **Core Development:** Building fast, scalable backends and web apps using **Python**, **Node.js**, and **Go (Golang)**.
+- 🎨 **Creative Design:** Crafting modern **UI/UX interfaces** in **Figma**, designing 3D assets in **Blender**, and editing videos in **Premiere Pro & After Effects**.
+- 🤖 **AI Prompt Engineering:** Architecting structured prompts, agent workflows, and LLM implementations for next-gen developer productivity.
+- 🚀 **Always Shipping:** Continuously experimenting with new frameworks, design languages, and open-source software.
 
 <br/>
 
-#### 🎨 Creative & Design Suite
-<img src="https://img.shields.io/badge/UI%2FUX_Design-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
-<img src="https://img.shields.io/badge/Graphic_Design-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white" />
+---
+
+## 🛠️ Tech Stack & Skill Matrix
+
+<div align="center">
+
+### 💻 Software Development
+| Technology | Category | Proficiency / Use Case |
+| :--- | :--- | :--- |
+| **Python** | Backend & Scripting | Automation, AI Workflows & Data Pipelines |
+| **Node.js** | Backend & Services | Scalable Web APIs, Microservices & Tooling |
+| **Go (Golang)** | Systems & Backend | High-Performance Services & Concurrent Systems |
+| **JavaScript (ES6+)** | Frontend & Scripting | Interactive Web Applications & Logic |
+| **HTML5 & CSS3** | Frontend Foundation | Responsive Layouts, Animations & Modern Styling |
+
+<br/>
+
+### 🎨 Visual & Creative Software
+<img src="https://img.shields.io/badge/UI%2FUX_Design-Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+<img src="https://img.shields.io/badge/Graphic_Design-Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white" />
 <img src="https://img.shields.io/badge/3D_Software-Blender-E87D0D?style=for-the-badge&logo=blender&logoColor=white" />
 <img src="https://img.shields.io/badge/Video_Editing-Premiere_Pro-9999FF?style=for-the-badge&logo=adobepremierepro&logoColor=white" />
-<img src="https://img.shields.io/badge/AI_Prompt_Engineering-10B981?style=for-the-badge&logo=openai&logoColor=white" />
+<img src="https://img.shields.io/badge/Motion_Graphics-After_Effects-999947?style=for-the-badge&logo=adobeaftereffects&logoColor=white" />
+<img src="https://img.shields.io/badge/AI_Prompting-LLM_Architecture-10B981?style=for-the-badge&logo=openai&logoColor=white" />
 
 </div>
 
@@ -65,7 +87,7 @@
 
 ---
 
-### 📊 GitHub Activity & Statistics
+## 📊 GitHub Analytics & Activity
 
 <div align="center">
 
@@ -75,7 +97,7 @@
 <br/><br/>
 
 <!-- Stats & Top Languages Side-by-Side -->
-<!-- NOTE: Replace YOUR-INSTANCE with your self-hosted Vercel app domain -->
+<!-- NOTE: Replace YOUR-INSTANCE with your deployed Vercel domain -->
 <img width="49%" src="https://YOUR-INSTANCE.vercel.app/api?username=Nystic-Shadow&show_icons=true&count_private=true&include_all_commits=true&hide_rank=true&hide_border=true&title_color=22D3EE&icon_color=A78BFA&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="GitHub Stats" />
 <img width="49%" src="https://YOUR-INSTANCE.vercel.app/api/top-langs/?username=Nystic-Shadow&layout=compact&langs_count=8&hide_border=true&title_color=22D3EE&text_color=94A3B8&bg_color=0A101F&card_width=500" alt="Top Languages" />
 
@@ -85,7 +107,7 @@
 
 ---
 
-### 🐍 Contribution Graph
+## 🐍 Contribution Graph
 
 <div align="center">
 
@@ -103,6 +125,6 @@
 
 <div align="center">
 
-*Designed with ❤️ for **Safir Akhtar (@Nystic-Shadow)** • 2026*
+*Designed & Architected for **Safir Akhtar (@Nystic-Shadow)** • 2026*
 
 </div>
